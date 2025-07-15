@@ -1,10 +1,12 @@
 import ActivityCard from "../../components/ActivityCard"
 import { recentActivities } from "../../constants/intdex"
 
+import styles from './RecentActivity.module.scss';
+
 const RecentActivity = () => {
   return (
     <div>
-      <h2>Recent Activity</h2>
+      <h2 className={styles.title}>Recent Activity</h2>
       {
         recentActivities.map((activity) => (
           <ActivityCard activity={activity} />
