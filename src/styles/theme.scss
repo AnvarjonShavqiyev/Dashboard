@@ -1,0 +1,78 @@
+:root {
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --transition-fast:
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 3px 8px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 14px 32px rgba(0, 0, 0, 0.25);
+}
+
+
+html[data-theme='light'] {
+  --bg-main: #f9fafb;               
+  --bg-secondary: #ffffff;          
+  --bg-tertiary: #f3f4f6;           
+  --bg-accent: #e5e7eb;             
+  --bg-card: #ffffff;
+  --bg-sidebar: #f1f5f9;            
+  --bg-sidebar-hover: #e2e8f0;      
+  --bg-sidebar-active: #cbd5e1;     
+  --bg-line: #e2e8f0;              
+  --bg-icon-ring: #e0e7ff;          
+
+  --text-primary: #111827;          
+  --text-secondary: #374151;        
+  --text-muted: #6b7280;            
+  --text-light: #1f2937;           
+
+  --card-gradient-start: #f9fafb;
+  --card-gradient-end: #e5e7eb;
+
+  --positive-bg: rgba(34, 197, 94, 0.12);  
+  --positive-color: #16a34a;              
+
+  --negative-bg: rgba(239, 68, 68, 0.12);  
+  --negative-color: #b91c1c;              
+
+  --warning-bg: rgba(251, 191, 36, 0.12);  
+  --warning-color: #ca8a04;               
+
+  --info-bg: rgba(59, 130, 246, 0.12);     
+  --info-color: #2563eb;                  
+}
+
+html[data-theme='dark'] {
+  --bg-main: #0f172a;               
+  --bg-secondary: #1e293b;          
+  --bg-tertiary: #334155;           
+  --bg-accent: #475569;             
+  --bg-card: #1e293b;
+  --bg-sidebar: #1c1f2e;
+  --bg-sidebar-hover: #2b2f40;
+  --bg-sidebar-active: #3b415c;
+  --bg-line: #334155;
+  --bg-icon-ring: #1e293b;
+
+  --text-primary: #f8fafc;          
+  --text-secondary: #cbd5e1;        
+  --text-muted: #94a3b8;            
+  --text-light: #e2e8f0;             
+
+  --card-gradient-start: #1e293b;
+  --card-gradient-end: #0f172a;
+
+  --positive-bg: rgba(34, 197, 94, 0.12);
+  --positive-color: #22c55e;
+
+  --negative-bg: rgba(239, 68, 68, 0.12);
+  --negative-color: #ef4444;
+
+  --warning-bg: rgba(251, 191, 36, 0.12);
+  --warning-color: #eab308;
+
+  --info-bg: rgba(59, 130, 246, 0.12);
+  --info-color: #3b82f6;
+}

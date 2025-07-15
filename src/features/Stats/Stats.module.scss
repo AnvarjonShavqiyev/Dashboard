@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 24px;
+  justify-content: flex-start;
+  background-color: var(--bg-main);
+  border-radius: var(--radius-lg);
+}
+
+.cardWrapper {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 280px;
+}
