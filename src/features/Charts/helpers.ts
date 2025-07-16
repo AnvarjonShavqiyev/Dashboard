@@ -1,4 +1,4 @@
-import { THEME } from "../../constants/intdex";
+import { THEME } from "../../constants";
 import { Theme } from "../../types";
 
 export const getUserActivityOptions = (theme: Theme) => ({

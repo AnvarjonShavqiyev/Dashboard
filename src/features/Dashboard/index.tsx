@@ -3,12 +3,10 @@ import Sidebar from "../../components/Sidebar";
 import Topbar from "../../components/Topbar";
 
 import styles from "./Dashboard.module.scss";
-import { useScreenSize } from "../../hooks/useScreenSize";
-import { MOBILE_SCREEN_SIZE } from "../../constants/intdex";
+import { useScreenData } from "../../hooks/useScreenSize";
 
 const Dashboard = () => {
-  const screenSize = useScreenSize();
-  const isMobile = screenSize < MOBILE_SCREEN_SIZE;
+  const { isMobile } = useScreenData();
 
   return (
     <div className={styles.layout}>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import { MOBILE_SCREEN_SIZE } from "../constants";
 
-export const useScreenSize = () => {
+export const useScreenData = () => {
   const [width, setWidth] = useState<number>(window.innerWidth);
 
   useEffect(() => {
@@ -9,5 +10,7 @@ export const useScreenSize = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return width;
+  const isMobile = width <= MOBILE_SCREEN_SIZE;
+
+  return { width, isMobile };
 };

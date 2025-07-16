@@ -1,8 +1,7 @@
-import { useMemo } from 'react';
 import type { StatCard } from '../../types';
 import styles from './StatCard.module.scss';
 import { FiArrowUpRight, FiArrowDownRight } from 'react-icons/fi';
-import { ZERO } from '../../constants/intdex';
+import { ZERO } from '../../constants';
 
 interface StatCardProps {
     card: StatCard
@@ -11,9 +10,7 @@ interface StatCardProps {
 const StatCard = ({card}: StatCardProps) => {
   const {label, value, change} = card;
 
-  const isPositive = useMemo(() => {
-    return change >= ZERO;
-  }, [change])
+  const isPositive = change >= ZERO
 
   return (
   <div className={styles.card}>

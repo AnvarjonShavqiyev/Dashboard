@@ -1,5 +1,5 @@
 import ActivityCard from "../../components/ActivityCard"
-import { recentActivities } from "../../constants/intdex"
+import { recentActivities } from "../../constants"
 
 import styles from './RecentActivity.module.scss';
 

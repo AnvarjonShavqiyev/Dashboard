@@ -1,5 +1,5 @@
 import StatCard from "../../components/StatCard";
-import { statCards } from "../../constants/intdex";
+import { statCards } from "../../constants";
 import styles from "./Stats.module.scss";
 
 const Stats = () => {

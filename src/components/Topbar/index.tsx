@@ -2,7 +2,7 @@ import styles from './Topbar.module.scss';
 import { FiBell } from 'react-icons/fi';
 import { MdDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
-import { THEME } from '../../constants/intdex';
+import { THEME } from '../../constants';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
 import { toggleTheme } from '../../store/reducers/theme.reducer';

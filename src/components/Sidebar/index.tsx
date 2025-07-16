@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Sidebar.module.scss';
-import { EMPTY_STRING, routes } from '../../constants/intdex';
+import { EMPTY_STRING, routes } from '../../constants';
 import { MdMenuOpen, MdOutlineMenu } from 'react-icons/md';
 
 const Sidebar = () => {
