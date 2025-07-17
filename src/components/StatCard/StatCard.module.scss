@@ -1,0 +1,62 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(145deg, var(--card-gradient-start), var(--card-gradient-end));
+  border-radius: 20px;
+  padding: 20px 28px;
+  color: var(--text-light);
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+  }
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.value {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color var(--transition-fast);
+}
+
+.positive {
+  background-color: var(--positive-bg);
+  color: var(--positive-color);
+}
+
+.negative {
+  background-color: var(--negative-bg);
+  color: var(--negative-color);
+}
+
+.right svg {
+  font-size: 18px;
+  stroke-width: 2.5;
+}
